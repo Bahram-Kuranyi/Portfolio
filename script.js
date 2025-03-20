@@ -100,7 +100,7 @@ new Vue({
 new Vue({
     el: '.home-content',
     data: {
-        typewriterTexts: ['Adaptable Analytical Thinker', 'Web Developer', 'Project Manager'],
+        typewriterTexts: ['Adaptable Analytical Thinker', 'Web Developer','Front End Engineer', 'Project Manager'],
         currentTextIndex: 0,
         currentCharIndex: 0,
         currentText: ''
