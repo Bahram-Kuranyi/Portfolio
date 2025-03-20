@@ -147,3 +147,13 @@ window.addEventListener('scroll', () => {
         homeImage.classList.remove('fade-out');
     }
 });
+
+window.addEventListener('scroll', () => {
+    const homeSection = document.querySelector('.home');
+    const scrollPosition = window.scrollY;
+    const maxScroll = homeSection.offsetHeight;
+    const opacity = 1 - (scrollPosition / maxScroll);
+
+    homeSection.style.backgroundColor = `rgba(0, 0, 0, ${1 - opacity})`;
+    homeSection.style.opacity = opacity;
+});
