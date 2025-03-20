@@ -1,0 +1,100 @@
+/* 
+This is the CSS file for the portfolio website. 
+It includes styles for layout, colors, fonts, and responsive design.
+*/
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* Header Styles */
+.header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Home Section Styles */
+.home {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.home-img img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.home-content {
+    margin-left: 20px;
+}
+
+/* About Section Styles */
+.about {
+    display: flex;
+    padding: 50px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Projects Section Styles */
+.Projects {
+    padding: 50px;
+    background: #f4f4f4;
+}
+
+.project-item {
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    margin: 10px 0;
+}
+
+/* Button Styles */
+.btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .home, .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-content {
+        margin-left: 0;
+        text-align: center;
+    }
+}
