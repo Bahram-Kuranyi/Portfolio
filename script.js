@@ -68,11 +68,11 @@ new Vue({
     el: '#app-certificates',
     data: {
         certificates: [
-            { id: 1, image: 'assets/certificate1.png', title: 'Certificate 1', organization: 'Organization 1', link: 'https://example.com/certificate1' },
-            { id: 2, image: 'assets/certificate2.png', title: 'Certificate 2', organization: 'Organization 2', link: 'https://example.com/certificate2' },
-            { id: 3, image: 'assets/certificate3.png', title: 'Certificate 3', organization: 'Organization 3', link: 'https://example.com/certificate3' },
-            { id: 4, image: 'assets/certificate4.png', title: 'Certificate 4', organization: 'Organization 4', link: 'https://example.com/certificate4' },
-            { id: 5, image: 'assets/certificate5.png', title: 'Certificate 5', organization: 'Organization 5', link: 'https://example.com/certificate5' }
+            { id: 1, image: 'assets/certificates/AI-Cert.jpg', title: 'Certificate 1', organization: 'Google', link: 'https://example.com/certificate1' },
+            { id: 2, image: 'assets/certificates/PM-Cert.png', title: 'Certificate 2', organization: 'Google', link: 'https://example.com/certificate2' },
+            { id: 3, image: 'assets/certificates/PM-Cert2.jpg', title: 'Certificate 3', organization: 'Google', link: 'https://example.com/certificate3' },
+            { id: 4, image: 'assets/certificates/Data-Cert.png', title: 'Certificate 4', organization: 'Google', link: 'https://example.com/certificate4' },
+            { id: 5, image: 'assets/certificates/Data-Cert2.png', title: 'Certificate 5', organization: 'Google', link: 'https://example.com/certificate5' }
         ]
     },
     mounted() {
@@ -146,14 +146,4 @@ window.addEventListener('scroll', () => {
         homeSection.classList.remove('fade-out');
         homeImage.classList.remove('fade-out');
     }
-});
-
-window.addEventListener('scroll', () => {
-    const homeSection = document.querySelector('.home');
-    const scrollPosition = window.scrollY;
-    const maxScroll = homeSection.offsetHeight;
-    const opacity = 1 - (scrollPosition / maxScroll);
-
-    homeSection.style.backgroundColor = `rgba(0, 0, 0, ${1 - opacity})`;
-    homeSection.style.opacity = opacity;
 });
