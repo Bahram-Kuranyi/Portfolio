@@ -622,11 +622,21 @@ span {
     .home {
         flex-direction: column; /* Stack elements vertically */
         padding: 5rem 5%;
+        text-align: center; /* Center text */
     }
 
     .home-img {
         order: -1; /* Move the image above the text */
         margin-bottom: 2rem; /* Add spacing below the image */
+    }
+
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center text */
+        justify-content: center; /* Center text */
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .home-content h1 {
@@ -656,7 +666,7 @@ span {
     .social-media {
         display: flex;
         justify-content: center; /* Center social media icons */
-        flex-wrap: wrap; /* Allow icons to wrap to the next line if needed */
+        flex-wrap: nowrap; /* Keep icons in a row */
         margin-top: 2rem; /* Adjust spacing */
     }
 
