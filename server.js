@@ -30,20 +30,17 @@ app.post('/send-email', (req, res) => {
     // Email options
     const mailOptions = {
         from: email,
-        to: 'bahramkuranyi@gmail.com', // Replace with your email
-        subject: 'New Contact Form Submission',
-        text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+        to: 'your-email@gmail.com', // Replace with your email
+        subject: `Message from ${name}`,
+        text: message
     };
 
     // Send email
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            console.log(error);
-            res.status(500).send('Something went wrong.');
-        } else {
-            console.log('Email sent: ' + info.response);
-            res.redirect('/thank-you.html');
+            return res.status(500).json({ success: false, error: error.toString() });
         }
+        res.status(200).json({ success: true, message: 'Message sent: ' + info.response });
     });
 });
 

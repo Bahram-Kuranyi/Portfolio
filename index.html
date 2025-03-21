@@ -98,21 +98,21 @@
     <section class="contact" id="contact">
         <div class="contact-content">
             <h2 class="heading">Contact <span>Me</span></h2>
-            <form action="/send-email" method="post">
+            <form id="contact-form" action="/send-email" method="post">
                 <div class="input-box">
-                    <input type="text" name="name" required>
-                    <label>Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name</label>
                 </div>
                 <div class="input-box">
-                    <input type="email" name="email" required>
-                    <label>Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
                 </div>
                 <div class="input-box">
-                    <textarea name="message" required></textarea>
-                    <label>Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">Message</label>
                 </div>
                 <div class="input-box">
-                    <input type="submit" value="Send">
+                    <input type="submit" value="Send Message">
                 </div>
             </form>
             <div class="info">

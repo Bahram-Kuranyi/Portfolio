@@ -147,3 +147,32 @@ window.addEventListener('scroll', () => {
         homeImage.classList.remove('fade-out');
     }
 });
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Example of sending form data to a server using Fetch API
+    fetch('/send-email', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name, email, message })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            window.location.href = '/thank-you.html'; // Redirect to Thank You page
+        } else {
+            alert('Failed to send message.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Failed to send message.');
+    });
+});
