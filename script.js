@@ -33,10 +33,10 @@ new Vue({
     el: '#app-projects',
     data: {
         projects: [
-            { id: 1, image: 'assets/project1.png', title: 'Project 1', description: 'Description of project 1. This project involves...' },
-            { id: 2, image: 'assets/project2.png', title: 'Project 2', description: 'Description of project 2. This project involves...' },
-            { id: 3, image: 'assets/project3.png', title: 'Project 3', description: 'Description of project 3. This project involves...' },
-            { id: 4, image: 'assets/project4.png', title: 'Project 4', description: 'Description of project 4. This project involves...' },
+            { id: 1, image: 'assets/projects/baradaranP.jpg', title: 'Baradaran', description: 'Description of project 1. This project involves...' },
+            { id: 2, image: 'assets/projects/hestooranP.jpg', title: 'Hestooran', description: 'Description of project 2. This project involves...' },
+            { id: 3, image: 'assets/projects/orkidehresturantP.jpg', title: 'Orkideh Resturant', description: 'Description of project 3. This project involves...' },
+            { id: 4, image: 'assets/projects/sharafoleslamiP.jpg', title: 'Sharaf Resturant', description: 'Description of project 4. This project involves...' },
             { id: 5, image: 'assets/project5.png', title: 'Project 5', description: 'Description of project 5. This project involves...' },
             { id: 6, image: 'assets/project6.png', title: 'Project 6', description: 'Description of project 6. This project involves...' },
             { id: 7, image: 'assets/project7.png', title: 'Project 7', description: 'Description of project 7. This project involves...' }

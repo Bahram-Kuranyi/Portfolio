@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const path = require('path');
 const app = express();
 const port = 3000;
 
@@ -11,7 +12,12 @@ app.use(express.static('public'));
 
 // Serve the HTML file
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// Serve the Thank You page
+app.get('/thank-you.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'thank-you.html'));
 });
 
 // Handle form submission
