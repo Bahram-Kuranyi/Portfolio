@@ -37,9 +37,6 @@ new Vue({
             { id: 2, image: 'assets/projects/hestooranP.jpg', title: 'Hestooran', description: 'Description of project 2. This project involves...' },
             { id: 3, image: 'assets/projects/orkidehresturantP.jpg', title: 'Orkideh Resturant', description: 'Description of project 3. This project involves...' },
             { id: 4, image: 'assets/projects/sharafoleslamiP.jpg', title: 'Sharaf Resturant', description: 'Description of project 4. This project involves...' },
-            { id: 5, image: 'assets/project5.png', title: 'Project 5', description: 'Description of project 5. This project involves...' },
-            { id: 6, image: 'assets/project6.png', title: 'Project 6', description: 'Description of project 6. This project involves...' },
-            { id: 7, image: 'assets/project7.png', title: 'Project 7', description: 'Description of project 7. This project involves...' }
         ]
     },
     mounted() {
