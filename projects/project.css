@@ -1,0 +1,22 @@
+.project-details {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center the content */
+}
+
+.project-details img {
+    width: 30%; /* Set the width to 30% */
+    object-fit: cover; /* Ensures the image fits nicely within the container */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    transition: transform 0.3s ease; /* Adds a hover effect */
+    margin-right: 20px; /* Adds spacing between the image and the text */
+}
+
+.project-details img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    box-shadow: 0 0 30px rgba(81, 38, 251, 0.5); /* Adds a hover shadow effect */
+}
+
+.project-details .content {
+    flex: 1; /* Allow the content to take up the remaining space */
+}

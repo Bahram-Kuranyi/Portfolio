@@ -91,7 +91,15 @@ section {
 }
 .fade-out {
     opacity: 0;
-    transition: opacity 1s ease;
+    transition: opacity 1s    Portfolio
+    ├── assets
+    ├── projects
+    │   ├── 1.html
+    │   ├── 2.html
+    │   └── ...
+    ├── index.html
+    ├── style.css
+    └── script.js ease;
 }
 
 .home::before {
@@ -381,6 +389,89 @@ span {
     box-shadow: 0 0 30px rgba(81, 38, 251, 0.5);
 }
 
+/* Project Details Section */
+.project-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f9f9f9; /* Match the main page's background color */
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.project-description {
+    flex: 1;
+    text-align: left;
+}
+
+.project-description h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.project-description p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.project-image {
+    flex: 1;
+    text-align: center;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-image {
+    width: 600px;
+    height: 400px;
+    object-fit: cover; /* Optional: Ensures the image scales properly */
+}
+
+/* Project Link Styling */
+.project-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-link img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-link h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-link p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+<a :href="'projects/' + project.id + '.html'" class="project-link">
+
 /* Fade-in animation */
 @keyframes fadeIn {
     from {
@@ -444,7 +535,7 @@ span {
 
 .certificate p {
     font-size: 1.6rem;
-    color: var(--text-color);
+    color: var (--text-color);
     margin-top: 0.5rem;
 }
 

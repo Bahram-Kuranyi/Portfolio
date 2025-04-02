@@ -1,3 +1,4 @@
+<!-- filepath: d:\Git\Portfolio\Portfolio\index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,11 +71,9 @@
             <div id="app-projects">
                 <h2 class="heading">My <span>Projects</span></h2>
                 <div class="project" v-for="project in projects" :key="project.id">
-                    <a :href="'projects/' + project.id + '.html'" class="project-link">
-                        <img :src="project.image" :alt="project.title">
-                        <h3>{{ project.title }}</h3>
-                        <p>{{ project.description }}</p>
-                    </a>
+                    <img :src="project.image" :alt="project.title">
+                    <h3>{{ project.title }}</h3>
+                    <p>{{ project.description }}</p>
                 </div>
             </div>
         </div>
