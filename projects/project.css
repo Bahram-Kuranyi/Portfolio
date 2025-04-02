@@ -1,22 +1,66 @@
+.header {
+    margin-bottom: 40px; /* Adds space below the header */
+}
+
 .project-details {
     display: flex; /* Use flexbox for layout */
-    align-items: center; /* Vertically center the content */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Add spacing between the image and content */
 }
 
 .project-details img {
     width: 30%; /* Set the width to 30% */
     object-fit: cover; /* Ensures the image fits nicely within the container */
-    border-radius: 8px; /* Optional: Adds rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
     transition: transform 0.3s ease; /* Adds a hover effect */
-    margin-right: 20px; /* Adds spacing between the image and the text */
+    margin-top: 10%; /* Adds space above the image */
 }
 
 .project-details img:hover {
     transform: scale(1.05); /* Slightly enlarges the image on hover */
-    box-shadow: 0 0 30px rgba(81, 38, 251, 0.5); /* Adds a hover shadow effect */
+    box-shadow: 0 0 30px rgba(81, 38, 251, 0.5); /* Adds a hover shadow effect */;
 }
 
 .project-details .content {
     flex: 1; /* Allow the content to take up the remaining space */
+    font-size: 16px; /* Base font size for the content */
+    line-height: 1.6; /* Improve readability with proper line spacing */
+    color: #333; /* Set a default text color */
+}
+
+.project-details .content h1, 
+.project-details .content h2, 
+.project-details .content h3 {
+    font-weight: bold; /* Make headings bold */
+    margin-bottom: 10px; /* Add spacing below headings */
+}
+
+.project-details .content h1 {
+    font-size: 24px; /* Font size for main headings */
+    margin-bottom: 15px; /* Add spacing below the title */
+    padding-top: 10%;
+}
+
+.project-details .content h2 {
+    font-size: 20px; /* Font size for subheadings */
+}
+
+.project-details .content h3 {
+    font-size: 18px; /* Font size for smaller headings */
+}
+
+.project-details .content p {
+    font-size: 16px; /* Font size for paragraphs */
+    margin-bottom: 15px; /* Add spacing below paragraphs */
+}
+
+.project-details .content ul {
+    margin: 15px 0; /* Add spacing around the list */
+    padding-left: 20px; /* Indent the list */
+    padding-top: 5%;
+}
+
+.project-details .content ul li {
+    margin-bottom: 10px; /* Add spacing between list items */
 }
