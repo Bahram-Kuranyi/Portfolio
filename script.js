@@ -131,7 +131,7 @@ new Vue({
     }
 });
 
-// Fade effect on scroll
+//  effect on scroll
 window.addEventListener('scroll', () => {
     const homeSection = document.querySelector('.home');
     const homeImage = document.querySelector('.home-img img');

@@ -87,7 +87,7 @@ section {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    transition: opacity .1s ease; /* Add transition for fade effect */
+    transition: opacity 1s ease; /* Add transition for fade effect */
 }
 .fade-out {
     opacity: 0;
