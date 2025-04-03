@@ -9,7 +9,7 @@
 }
 
 .project-details img {
-    width: 30%; /* Set the width to 30% */
+    width: 50vw; /* Set the image width to 50% of the viewport width */
     object-fit: cover; /* Ensures the image fits nicely within the container */
     border-radius: 8px; /* Adds rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */

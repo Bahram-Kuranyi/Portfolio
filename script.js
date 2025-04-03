@@ -33,10 +33,11 @@ new Vue({
     el: '#app-projects',
     data: {
         projects: [
-            { id: 1, image: 'assets/projects/baradaranP.jpg', title: 'Baradaran', description: 'Description of project 1. This project involves...' },
-            { id: 2, image: 'assets/projects/hestooranP.jpg', title: 'Hestooran', description: 'Description of project 2. This project involves...' },
-            { id: 3, image: 'assets/projects/orkidehresturantP.jpg', title: 'Orkideh Resturant', description: 'Description of project 3. This project involves...' },
-            { id: 4, image: 'assets/projects/sharafoleslamiP.jpg', title: 'Sharaf Resturant', description: 'Description of project 4. This project involves...' },
+            { id: 1, image: 'assets/projects/baradaranP.jpg', title: 'Baradaran'},
+            { id: 2, image: 'assets/projects/hestooranP.jpg', title: 'Hestooran'},
+            { id: 3, image: 'assets/projects/orkidehresturantP.jpg', title: 'Orkideh Resturant' },
+            { id: 4, image: 'assets/projects/sharafoleslamiP.jpg', title: 'Sharaf Resturant'},
+            { id: 5, image: 'assets/projects/Kanoon.jpg', title: 'Kanoon.ir'},
         ]
     },
     mounted() {
