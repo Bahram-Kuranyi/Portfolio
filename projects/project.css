@@ -64,3 +64,19 @@
 .project-details .content ul li {
     margin-bottom: 10px; /* Add spacing between list items */
 }
+
+.centered-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+    background-color: #f9f9f9; /* Optional background color */
+}
+
+.centered-footer p {
+    font-size: 1.5rem; /* Larger font size */
+    color: #228B22; /* Luxury green color */
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}

@@ -657,11 +657,19 @@ span {
 
 /* Footer Section Style */
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+    background-color: var(--main-color); /* Use main color for footer background */
+    color: var(--bg-color); /* Use background color for text */
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
     text-align: center;
-    padding: 2rem 0;
-    background: var(--bg-color);
-    color: var(--text-color);
-    font-size: 1.6rem;
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
 }
 
 /* Fade-in animation */
